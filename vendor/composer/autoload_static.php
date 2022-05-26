@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitc650c50868fd77ef64f342eefb6d51fa
 {
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'TelegramBot\\Api\\' => 16,
+        ),
         'M' => 
         array (
             'Medoo\\' => 6,
@@ -14,6 +18,10 @@ class ComposerStaticInitc650c50868fd77ef64f342eefb6d51fa
     );
 
     public static $prefixDirsPsr4 = array (
+        'TelegramBot\\Api\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/telegram-bot/api/src',
+        ),
         'Medoo\\' => 
         array (
             0 => __DIR__ . '/..' . '/catfan/medoo/src',

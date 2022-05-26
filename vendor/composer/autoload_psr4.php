@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'TelegramBot\\Api\\' => array($vendorDir . '/telegram-bot/api/src'),
     'Medoo\\' => array($vendorDir . '/catfan/medoo/src'),
 );
