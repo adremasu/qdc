@@ -1,17 +1,17 @@
 <?php
 // Require Composer's autoloader.
 require 'vendor/autoload.php';
-
+require 'config.php';
 // Using Medoo namespace.
 use Medoo\Medoo;
 echo 'xiao';
 $database = new Medoo([
   // [required]
   'type' => 'mysql',
-  'host' => 'localhost',
-  'database' => 'name',
-  'username' => 'your_username',
-  'password' => 'your_password',
+  'host' => $host,
+  'database' => $database,
+  'username' => $username,
+  'password' => $password,
 
   // [optional]
   'charset' => 'utf8mb4',
