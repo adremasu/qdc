@@ -10,7 +10,6 @@ return array(
     'Psr\\Http\\Server\\' => array($vendorDir . '/psr/http-server-handler/src'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),
     'Psr\\Http\\Client\\' => array($vendorDir . '/psr/http-client/src'),
-    'Medoo\\' => array($vendorDir . '/catfan/medoo/src'),
     'Longman\\TelegramBot\\' => array($vendorDir . '/longman/telegram-bot/src'),
     'Laminas\\ZendFrameworkBridge\\' => array($vendorDir . '/laminas/laminas-zendframework-bridge/src'),
     'Laminas\\HttpHandlerRunner\\' => array($vendorDir . '/laminas/laminas-httphandlerrunner/src'),

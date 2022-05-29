@@ -1,6 +1,5 @@
 {
     "require": {
-        "catfan/medoo": "^1.7",
         "longman/telegram-bot": "^0.64.0",
         "laminas/laminas-httphandlerrunner": "^1.2"
     }

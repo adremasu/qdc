@@ -22,10 +22,6 @@ class ComposerStaticInitc650c50868fd77ef64f342eefb6d51fa
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
         ),
-        'M' => 
-        array (
-            'Medoo\\' => 6,
-        ),
         'L' => 
         array (
             'Longman\\TelegramBot\\' => 20,
@@ -57,10 +53,6 @@ class ComposerStaticInitc650c50868fd77ef64f342eefb6d51fa
         'Psr\\Http\\Client\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
-        ),
-        'Medoo\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/catfan/medoo/src',
         ),
         'Longman\\TelegramBot\\' => 
         array (
