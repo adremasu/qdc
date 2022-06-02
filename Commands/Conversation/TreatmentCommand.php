@@ -200,9 +200,6 @@ class TreatmentCommand extends UserCommand
                       ->setSelective(true);
 
                   $data['text'] = 'Selezione il mese:';
-                  if ($text !== '') {
-                      $data['text'] = 'Choose a keyboard option to select the month';
-                  }
 
                   $result = Request::sendMessage($data);
                   break;
