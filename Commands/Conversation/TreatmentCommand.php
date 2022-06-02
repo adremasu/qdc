@@ -157,7 +157,7 @@ class TreatmentCommand extends UserCommand
 
             // No break!
             case 3:
-                $years = [date("Y",strtotime("-1 year")),date("Y"), date("Y",strtotime("+1 year"))]
+                $years = [date("Y",strtotime("-1 year")),date("Y"), date("Y",strtotime("+1 year"))];
                 if ($text === '' || !in_array($text, $years, true)) {
                     $notes['state'] = 3;
                     $this->conversation->update();
@@ -180,19 +180,26 @@ class TreatmentCommand extends UserCommand
 
             // No break!
             case 4:
-            for ($m=1; $m<=12; $m++) {
-             $months[] = date('F', mktime(0,0,0,$m, 1, date('Y')));
-             }
+              for ($m=1; $m<=3; $m++) {
+                $months1[] = date('F', mktime(0,0,0,$m, 1, date('Y')));
+              }
+              for ($m=4; $m<=8; $m++) {
+                $months2[] = date('F', mktime(0,0,0,$m, 1, date('Y')));
+              }
+              for ($m=9; $m<=12; $m++) {
+               $months3[] = date('F', mktime(0,0,0,$m, 1, date('Y')));
+               }
+
               if ($text === '' || !in_array($text, $months, true)) {
                   $notes['state'] = 4;
                   $this->conversation->update();
 
-                  $data['reply_markup'] = (new Keyboard($months))
+                  $data['reply_markup'] = (new Keyboard($months1,$months2,$months3))
                       ->setResizeKeyboard(true)
                       ->setOneTimeKeyboard(true)
                       ->setSelective(true);
 
-                  $data['text'] = 'Selezione l\'anno:';
+                  $data['text'] = 'Selezione il mese:';
                   if ($text !== '') {
                       $data['text'] = 'Choose a keyboard option to select the month';
                   }
